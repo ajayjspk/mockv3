@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter;
+  background-color: rgb(13, 13, 17);
+  margin: 0%;
+  padding: 0%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+body {
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 1rem;
+	background-color: rgba(10, 12, 18, 1);
+	color: white;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+p {
+	margin: 0;
+}
+
+:root {
+  --border-size: 2px;
+  --border-angle: 0turn;
+}
+
+.animation-line {
+  --border-size: 1.5px;
+  --border-angle: 0turn;
+  /* border-radius: 1rem; */
+  padding: .5px;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgba(10, 12, 18, 1),
+      rgba(10, 12, 18, 1) 50%,
+      rgba(10, 12, 18, 1)
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, rgb(77, 164, 241),rgb(192, 251, 143), rgb(17, 6, 218));
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: bg-spin 5s linear infinite;
+  
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+&:hover {
+  animation-play-state: paused;
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+.animation-line0 {
+  --border-size: 2px;
+  --border-angle: 0turn;
+  /* border-radius: 1rem; */
+  padding: 4px;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgba(10, 12, 18, 1),
+      rgba(10, 12, 18, 1) 50%,
+      rgba(10, 12, 18, 1)
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, rgb(1, 96, 179), rgb(17, 6, 218));
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: bg-spin 5s linear infinite;
+  
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+&:hover {
+  animation-play-state: paused;
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+.animation-line1 {
+  --border-size: 2px;
+  --border-angle: 0turn;
+  border-radius: .4rem;
+  width: fit-content;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgba(10, 12, 18, 1),
+      rgba(10, 12, 18, 1) 50%,
+      rgba(10, 12, 18, 1)
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, rgb(1, 96, 179), rgb(17, 6, 218));
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: bg-spin 7s linear infinite;
+  
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.animation-line2 {
+  --border-size: 2.5px;
+  --border-angle: 0turn;
+  border-radius: .3rem;
+  width: fit-content;
+  padding: 8px;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgba(10, 12, 18, 1),
+      rgba(10, 12, 18, 1) 50%,
+      rgba(10, 12, 18, 1)
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%,rgb(1, 96, 179), rgb(17, 6, 218));
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: bg-spin 6s linear infinite;
+  
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
